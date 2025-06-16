@@ -329,6 +329,7 @@ body.light-theme{
 
 .home__img{
   width: 160px;
+  scale: 300%  
 }
 
 .home__handle{
@@ -340,9 +341,9 @@ body.light-theme{
               hsla(var(--first-hue), var(--sat), var(--lig), .2)
              );
   border-radius: 10rem 10rem 1rem 1rem;  
-  display: flex;
-  align-items: flex-end;         
-  justify-content: center;
+  display:grid;
+  align-items:flex-end;         
+  justify-content:right;
   overflow: hidden;
 }
 
