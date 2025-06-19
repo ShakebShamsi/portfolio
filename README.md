@@ -5,6 +5,10 @@ This site highlights my work, skills, and professional journey as a web develope
 
 🔗 **Live URL:** [portfolio](https://shakeb.onrender.com)
 
+![portfolio-2](https://github.com/user-attachments/assets/f3abf346-9b9c-41a5-9e40-f154601c9ce9)
+![portfolio-1](https://github.com/user-attachments/assets/ac022fb5-3281-4584-aa48-5683f1b2457b)
+
+
 ---
 
 ## 📌 Overview
