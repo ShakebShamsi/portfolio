@@ -68,7 +68,8 @@ portfolio/
 📬 Contact Me
 You can connect with me via:
 
-LinkedIn:``` linkedin.com/in/shakebshamsi```
+LinkedIn: 
+``` linkedin.com/in/shakebshamsi```
 
 Email: info.shakeb@gmail.com
 
