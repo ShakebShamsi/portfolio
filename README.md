@@ -39,8 +39,8 @@ To run this site locally:
 
 ```
 git clone https://github.com/shakebshamsi/portfolio.git
-
-
+```
+```
 # Open index.html in your browser
 portfolio/
 ├── index.html
