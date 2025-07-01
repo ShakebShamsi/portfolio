@@ -90,6 +90,28 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
+/*=============== COLOR THEME SWITCHER ===============*/
+const gearToggle = document.getElementById('gearToggle');
+const themeContainer = document.querySelector('.theme-container');
+
+gearToggle.addEventListener('click', () => {
+   themeContainer.classList.toggle('active');
+});
+
+// Save selected hue & apply
+const savedHue = localStorage.getItem('selectedHue');
+if (savedHue) {
+  document.documentElement.style.setProperty('--first-hue', savedHue);
+}
+
+document.querySelectorAll('.color').forEach(color => {
+  color.addEventListener('click', () => {
+    const hue = color.getAttribute('data-hue');
+    document.documentElement.style.setProperty('--first-hue', hue);
+    localStorage.setItem('selectedHue', hue);
+  });
+});
+
 /*=============== LIGHT DARK THEME ===============*/
 const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'
