@@ -51,23 +51,22 @@ linkWork.forEach(l=> l.addEventListener('click', activeWork))
 
 /*=============== SWIPER TESTIMONIAL ===============*/
 let swiperTestimonial = new Swiper(".testimonial__container", {
-    spaceBetween: 24,
-    loop: true,
-    grabCursor:true,
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-        576: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 48,
-        },
-      },
+   loop: true,
+   grabCursor: true,
+   spaceBetween: 30,
+   slidesPerView: 1, // Default for mobile/small screens
+   pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+   },
+   breakpoints: {
+     768: {
+       slidesPerView: 2, // Show 2 cards on tablet and up
+     },
+     1200: {
+       slidesPerView: 2, // Keep 2 even on large screens
+     }
+   }
   });
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
@@ -155,3 +154,29 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data`)
 sr.reveal(`.home__handle`, {delay:700})
 sr.reveal(`.home__social, .home__scroll`, {delay:900, origin:'bottom`'})
+
+
+var testimonialSwiper = new Swiper(".testimonial__container", {
+   loop: true,
+   grabCursor: true,
+   spaceBetween: 30,
+   pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+   },
+   autoplay: {
+      delay: 2000, // 2 seconds
+      disableOnInteraction: false, // keep autoplay even when user interacts
+    },
+   breakpoints: {
+     568: {
+       slidesPerView: 2,
+     },
+     1024: {
+       slidesPerView: 2,
+     },
+     0: {
+       slidesPerView: 1,
+     },
+   },
+ });
