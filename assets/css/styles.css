@@ -8,12 +8,15 @@
    /*========== Colors ==========*/
    /*Color mode HSL(hue, saturation, lightness)*/
    /*
-        Purple: hsl(250, 66%, 75%)
-        Blue: hsl(207, 90%, 72%)
-        Pink: hsl(356, 66%, 75%)
-        Teal: hsl(174, 63%, 62%)
+         Coral: hsl(16, 100%, 65%)
+         Purple: hsl(250, 66%, 75%)
+         Teal: hsl(174, 63%, 62%)
+         Blue: hsl(207, 90%, 72%)
+         Golden Yellow: hsl(52, 95%, 65%)
+         Steel Blue: hsl(210, 44%, 38%)
+         Orange: hsl(35, 100%, 54%)
   */
-   --first-hue: 356;
+   --first-hue: 250;
    --sat: 66%;
    --lig: 75%;
    --second-hue: 219;
@@ -183,6 +186,7 @@ img {
 /* Color circles */
 .color-options {
    display: flex;
+   flex-direction: row;
    gap: 10px;
    margin-top: 0.5rem;
 }
@@ -250,8 +254,8 @@ body.light-theme {
    --container-color: #fff;
 }
 
-/*========== 
-    Color changes in some parts of 
+/*==========
+    Color changes in some parts of
     the website, in light theme
 ==========*/
 .light-theme .scroll-header {
