@@ -1141,7 +1141,7 @@ body.light-theme {
 
 @media screen and (min-width: 767px) {
    .work__container {
-      grid-template-columns: repeat(2, max-content);
+      grid-template-columns: repeat(3, max-content);
    }
 
    .contact__container {
