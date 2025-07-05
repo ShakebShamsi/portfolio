@@ -1246,11 +1246,6 @@ body.light-theme {
       width: 100%;
    }
 
-   /* Forced CSS due to small img size*/
-   .evera__img, .genai__img, .git__img, .quiz__img{
-      margin-bottom: 3.5rem;
-   }
-
    .work__title {
       margin-bottom: .5rem;
    }
