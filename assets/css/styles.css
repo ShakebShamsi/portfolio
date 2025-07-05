@@ -1033,6 +1033,7 @@ body.light-theme {
 }
 
 /*=============== BREAKPOINTS ===============*/
+
 /* For small devices */
 @media screen and (max-width:320px) {
    .nav__menu {
@@ -1141,7 +1142,7 @@ body.light-theme {
 
 @media screen and (min-width: 767px) {
    .work__container {
-      grid-template-columns: repeat(3, max-content);
+      grid-template-columns: repeat(2, max-content);
    }
 
    .contact__container {
@@ -1235,7 +1236,9 @@ body.light-theme {
    }
 
    .work__container {
-      gap: 3rem;
+      gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+      scale:90%
    }
 
    .work__card {
@@ -1251,8 +1254,8 @@ body.light-theme {
    }
 
    .testimonial__container {
-      width: 750px;
-      margin-left: 23%;
+      width: 850px;
+      margin-right: auto
    }
 
    .testimonial__card {
