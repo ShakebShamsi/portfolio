@@ -374,6 +374,8 @@ body.light-theme {
    color: var(--first-color);
    font-weight: var(--font-medium);
    transition: .4s;
+   letter-spacing: 5px;  
+   font-weight: 900; 
 }
 
 .nav__logo:hover {
