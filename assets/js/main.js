@@ -75,17 +75,30 @@ const sections = document.querySelectorAll('section[id]')
 function scrollActive(){
     const scrollY = window.pageYOffset
 
-    sections.forEach(current =>{
+    sections.forEach((current, idx) => {
         const sectionHeight = current.offsetHeight,
               sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id')
+              sectionId = current.getAttribute('id');
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        let navLink = document.querySelector('.nav__menu a[href*="' + sectionId + '"]');
+        if (!navLink) return;
+
+        // Always highlight #contact when scrolled past its top
+        if (sectionId === 'contact') {
+            if (scrollY > sectionTop - 100) {
+                navLink.classList.add('active-link');
+            } else {
+                navLink.classList.remove('active-link');
+            }
+            return;
         }
-    })
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            navLink.classList.add('active-link');
+        } else {
+            navLink.classList.remove('active-link');
+        }
+    });
 }
 window.addEventListener('scroll', scrollActive)
 
